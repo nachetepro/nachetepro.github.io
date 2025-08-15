@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Variables globales de color y fuente */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Fuentes base (ajusta si usas otras fuentes personalizadas) */
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
+}
+
+/* Tema oscuro automático según preferencia del sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+  }
+}
+
+/* Estilos base para el body */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
