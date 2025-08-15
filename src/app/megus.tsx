@@ -1,3 +1,10 @@
+import React from "react";
+import { Coffee, ArrowRight, Share2 } from "lucide-react";
+
+const brand = {
+  brown: "#4B2E21",
+};
+
 function Hero() {
   return (
     <section className="max-w-6xl mx-auto px-4 py-8">
@@ -34,5 +41,15 @@ function Hero() {
         </div>
       </div>
     </section>
+  );
+}
+
+// Ejemplo de uso para evitar warning de Hero definido pero no usado
+export default function MegusPage() {
+  return (
+    <>
+      <Hero />
+      {/* Aquí puedes agregar más secciones si quieres */}
+    </>
   );
 }
