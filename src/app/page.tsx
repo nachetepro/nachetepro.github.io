@@ -87,7 +87,7 @@ function Header() {
         <motion.img 
           src="/logo.png" 
           alt="Logo" 
-          className="h-22 w-22 object-contain rounded-xl shadow-md"
+          className="h-19 w-19 object-contain rounded-xl shadow-md"
           animate={{ y: [0, -6, 0], rotate: [0, 2, -2, 0] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         />
